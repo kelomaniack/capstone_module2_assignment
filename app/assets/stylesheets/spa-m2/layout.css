@@ -1,0 +1,16 @@
+body .container {
+  margin-top: 10px;
+  box-shadow: 2px 2px 2px 2px #005ea5;
+}
+
+body .form-group {
+  padding-top: 10px;
+}
+
+.form-group label {
+  padding-right: 10px;
+}
+
+ul a {
+  cursor: pointer;
+}

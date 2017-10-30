@@ -1,0 +1,45 @@
+{:uriI".file:///Users/Vangelis/Documents/Vagos%20Personal%20Stuff/coursera/Capstone%20Photo%20Tourist%20Web%20Application/Assignments/Assignment%202/capstone_module2_assignment/app/assets/javascripts/spa-demo/cities/cities.html?type=text/html&id=776a79c1634613d8f4ced5d6f930a09a9445ee4a2175a124664c36259f1aebc0:ET:load_pathI"app/assets/javascripts;T:filenameI"7app/assets/javascripts/spa-demo/cities/cities.html;T:	nameI"spa-demo/cities/cities;T:logical_pathI" spa-demo/cities/cities.html;T:content_typeI"text/html;T:sourceI"´<div>
+  <h3>Cities</h3>
+  <span>(from spa-m2/cities/cities.html)</span>
+
+  <form name="CityName" class="form-group">
+    <div class="form-group">
+      <label>Name:*</label>
+
+      <input placeholder="enter city ..." name="name"
+        ng-model="citiesVM.city.name"
+        required="required"/>
+    </div>
+
+    <div>
+      <button class="btn btn-success" ng-if="!citiesVM.city.id"
+        type="submit"
+        ng-click="citiesVM.create()">Create City
+      </button>
+    </div>
+
+    <div ng-if="citiesVM.city.id">
+      <button class="btn btn-info" type="submit"
+        ng-click="citiesVM.update()">Update City
+      </button>
+      <button class="btn btn-warning" type="submit"
+        ng-click="citiesVM.remove()">Remove City
+      </button>
+    </div>
+
+</form>
+
+
+  <h2> Cities list </h2>
+  <ul>
+    <li ng-repeat="city in citiesVM.cities | orderBy:'name'">
+      <a ng-click="citiesVM.edit(city)">{{city.name}}</a>
+    </li>
+  </ul>
+
+</div>
+;T:metadata{	:dependencieso:Set:
+@hash{
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"2processors:type=text/html&file_type=text/html;TTI"âfile-digest:///Users/Vangelis/Documents/Vagos%20Personal%20Stuff/coursera/Capstone%20Photo%20Tourist%20Web%20Application/Assignments/Assignment%202/capstone_module2_assignment/app/assets/javascripts/spa-demo/cities/cities.html;TT:charsetI"
+utf-8;F:digest"%{&ÿQw=™“X-ÈI+ÿ‡Ö*IŸrÔ*"IE':lengthi´:dependencies_digest"%3Í’5§úh„8`9÷$ŠŸ/A½cæ§¬Í&áÈÒ:idI"E776a79c1634613d8f4ced5d6f930a09a9445ee4a2175a124664c36259f1aebc0;F:
+mtimel+{ëY

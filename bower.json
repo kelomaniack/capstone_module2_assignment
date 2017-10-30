@@ -1,0 +1,24 @@
+{
+  "name": "assigment",
+  "description": "== README",
+  "main": "index.js",
+  "authors": [
+    "carlos eduardo gonçalves <kherokuone@rediffmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/K43G0N/ror-capstone-w1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery2": "^2.0.0",
+    "bootstrap-sass": "^3.3.7",
+    "angular": "^1.6.6",
+    "angular-ui-router": "^1.0.6",
+    "angular-resource": "^1.6.6"
+  }
+}

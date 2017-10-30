@@ -1,0 +1,41 @@
+{
+  "name": "assigment",
+  "version": "1.0.0",
+  "description": "== README",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/K43G0N/ror-capstone-w1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/K43G0N/ror-capstone-w1/issues"
+  },
+  "homepage": "https://github.com/K43G0N/ror-capstone-w1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp-clean-css": "^3.8.0",
+    "gulp-debug": "^3.1.0",
+    "gulp-htmlmin": "^3.0.0",
+    "gulp-if": "^2.0.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-sync": "^0.1.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-useref": "^3.1.2",
+    "install": "^0.10.1"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
+  }
+}

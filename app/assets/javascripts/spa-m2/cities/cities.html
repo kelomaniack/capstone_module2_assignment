@@ -1,0 +1,40 @@
+<div>
+  <h3>Cities</h3>
+  <span>(from spa-m2/cities/cities.html)</span>
+
+  <form name="CityName" class="form-group">
+    <div class="form-group">
+      <label>Name:*</label>
+
+      <input placeholder="enter city ..." name="name"
+        ng-model="citiesVM.city.name"
+        required="required"/>
+    </div>
+
+    <div>
+      <button class="btn btn-success" ng-if="!citiesVM.city.id"
+        type="submit"
+        ng-click="citiesVM.create()">Create City
+      </button>
+    </div>
+
+    <div ng-if="citiesVM.city.id">
+      <button class="btn btn-info" type="submit"
+        ng-click="citiesVM.update()">Update City
+      </button>
+      <button class="btn btn-warning" type="submit"
+        ng-click="citiesVM.remove()">Remove City
+      </button>
+    </div>
+
+</form>
+
+
+  <h2> Cities list </h2>
+  <ul>
+    <li ng-repeat="city in citiesVM.cities | orderBy:'name'">
+      <a ng-click="citiesVM.edit(city)">{{city.name}}</a>
+    </li>
+  </ul>
+
+</div>
